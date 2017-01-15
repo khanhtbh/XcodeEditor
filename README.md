@@ -2,7 +2,7 @@
 
 An API for manipulating Xcode project files. 
 
-I added some updates from https://github.com/akame in https://github.com/appsquickly/XcodeEditor/issues/62 and modified a little bit to prevent duplicated emdded frameworks.
+I added some updates from https://github.com/akame in https://github.com/appsquickly/XcodeEditor/issues/62 and modified a little bit to prevent duplicated emdded frameworks. You can find it in Adding a Framework section
 # Usage
 
 ### Adding Source Files to a Project
