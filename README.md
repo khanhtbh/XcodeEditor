@@ -1,7 +1,7 @@
 # Description
 
 An API for manipulating Xcode project files. 
-
+I added some updates from https://github.com/akame in https://github.com/appsquickly/XcodeEditor/issues/62 and modified a little bit to prevent duplicated emdded frameworks.
 # Usage
 
 ### Adding Source Files to a Project
@@ -55,6 +55,10 @@ XCXibDefinition* xibDefinition = [[XCXibDefinition alloc] initWithName:@"MyXibFi
 XCFrameworkDefinition* frameworkDefinition =
     [[XCFrameworkDefinition alloc] initWithFilePath:@"<framework path>" copyToDestination:NO];
 [group addFramework:frameworkDefinition toTargets:[project targets]];
+/* to add/remove embedded framework
+[group addEmbeddedFramework:frameworkDefinition toTargets:[project targets]];
+[group removeEmbeddedFramework:frameworkDefinition toTargets:[project targets]];
+*/
 [project save];
 ```
 Setting copyToDestination to YES, will cause the framework to be first copied to the group's directory within the
